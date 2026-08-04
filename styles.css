@@ -697,7 +697,7 @@ h3 {
     justify-content: flex-start;
   }
 
-  nav {
+  .site-header nav {
     display: none;
   }
 
