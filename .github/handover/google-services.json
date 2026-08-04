@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-08-04T16:49:06Z",
+  "site": "https://deliriumfamilyguide.com/",
+  "google_search_console": {
+    "property": "https://deliriumfamilyguide.com/",
+    "property_type": "url_prefix",
+    "verification_method": "html_meta_tag",
+    "verification_state": "ownership_verified",
+    "verification_release": {
+      "pull_request": "https://github.com/amaclullich/deliriumfamilyguide.com/pull/4",
+      "main_commit": "799dc19ab3700b07fed7261e2bc4f0d84c2b050f"
+    },
+    "sitemap": {
+      "url": "https://deliriumfamilyguide.com/sitemap.xml",
+      "submitted_date": "2026-08-04",
+      "last_read_date": "2026-08-04",
+      "status": "success",
+      "discovered_pages": 3,
+      "discovered_videos": 0
+    },
+    "processing_state": "processing_data_check_again_later",
+    "indexing_state": "not_established",
+    "ranking_state": "not_established"
+  },
+  "google_analytics": {
+    "account_name": "Alasdair MacLullich websites",
+    "account_id": "56306664",
+    "property_name": "Delirium Family Guide",
+    "property_id": "548374068",
+    "property_type": "GA4",
+    "reporting_time_zone": "United Kingdom",
+    "currency": "GBP",
+    "industry_category": "Health",
+    "business_size": "small_1_to_10_employees",
+    "business_objective": "understand_web_and_or_app_traffic",
+    "web_stream": {
+      "name": "deliriumfamilyguide.com",
+      "url": "https://deliriumfamilyguide.com",
+      "stream_id": "15380434243",
+      "measurement_id": "G-HEXFX95CM1",
+      "enhanced_measurement_account_setting": "enabled",
+      "tag_deployment": "not_deployed",
+      "data_collection_state": "no_data_received_in_past_48_hours"
+    },
+    "retention": {
+      "event_data": "2_months",
+      "user_data": "2_months",
+      "reset_user_retention_on_new_activity": false
+    }
+  },
+  "privacy_and_consent": {
+    "public_site_tracking_state": "no_analytics_or_tag_manager_code",
+    "public_site_cookie_state": "no_set_cookie_header_observed",
+    "analytics_tag_release": "gated",
+    "reject_path_test": "not_run_tag_not_deployed",
+    "accept_path_test": "not_run_tag_not_deployed",
+    "withdrawal_path_test": "not_run_tag_not_deployed",
+    "requirements_before_tag_release": [
+      "Implement clear privacy wording",
+      "Implement consent controls with a default no-tracking state",
+      "Verify that Reject sends no Analytics requests and sets no Analytics cookies",
+      "Verify that Accept starts only the intended Analytics requests and cookies",
+      "Verify withdrawal stops future tracking and clears applicable first-party Analytics cookies",
+      "Review enhanced measurement events before enabling collection"
+    ]
+  },
+  "state_distinctions": {
+    "technical_readiness": "live_verified",
+    "search_console_verification": "complete",
+    "sitemap_processing": "success",
+    "page_indexing": "not_established",
+    "search_ranking": "not_established",
+    "analytics_account_setup": "complete",
+    "analytics_tag_deployment": "not_started",
+    "analytics_data_collection": "not_started"
+  }
+}

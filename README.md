@@ -11,7 +11,8 @@ Static website for `deliriumfamilyguide.com`.
 - `CNAME` activates the custom domain. `CNAME.pending` is retained as a record of the held-back cutover state.
 - The footer provides visible authorship, verified professional profiles, medical-information wording and a link to the editorial policy.
 - Search metadata and JSON-LD describe only visible content and verified author relationships. They do not establish indexing, ranking or inclusion in AI-generated answers.
-- The machine-readable release record is stored at `.github/handover/seo-ai-discoverability.json` so it is retained with the repository rather than presented as public site content.
+- Machine-readable release records are stored in `.github/handover/` so they are retained with the repository rather than presented as public site content.
+- Search Console is verified and the sitemap has been accepted. The separate GA4 property and web stream exist, but the Analytics tag is deliberately not deployed until consent and privacy behaviour have been implemented and tested.
 
 ## Publication sequence
 

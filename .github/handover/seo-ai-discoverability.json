@@ -2,13 +2,18 @@
   "schema_version": 1,
   "site": "https://deliriumfamilyguide.com/",
   "repository": "https://github.com/amaclullich/deliriumfamilyguide.com",
-  "stage": "ready_for_pull_request",
+  "stage": "live_verified",
   "baseline": {
     "branch": "main",
     "commit": "e87192edc0ba6b242a29a968669cebc7c5d82a46",
     "checked_at_utc": "2026-08-04T16:23:18Z"
   },
-  "release_branch": "agent/seo-ai-discoverability-audit",
+  "release": {
+    "branch": "agent/seo-ai-discoverability-audit",
+    "pull_request": "https://github.com/amaclullich/deliriumfamilyguide.com/pull/3",
+    "main_commit": "d07556669f4d1a2bfa243ca7d563d6d78869f91d",
+    "live_verified_at_utc": "2026-08-04T16:35:46Z"
+  },
   "constraints_preserved": [
     "github_pages_root_publication",
     "custom_apex_domain",
@@ -123,21 +128,23 @@
         "total_blocking_time": "0 ms"
       }
     },
-    "pull_request": "pending",
-    "deployment": "pending",
-    "custom_domain_post_deployment": "pending"
+    "pull_request": "merged",
+    "deployment": "live",
+    "custom_domain_post_deployment": "pass",
+    "repository_handover_not_public": true
   },
   "search_state": {
-    "technical_readiness": "release_candidate",
-    "google_search_console": "not_yet_configured",
-    "indexing": "not_asserted",
+    "technical_readiness": "live_verified",
+    "google_search_console": "url_prefix_property_verified",
+    "sitemap": "submitted_and_read_successfully_with_3_discovered_pages",
+    "processing": "search_console_reports_processing_data",
+    "indexing": "not_established",
     "ranking": "not_asserted",
     "ai_answer_inclusion": "not_asserted"
   },
   "later_actions": [
-    "After the release is verified, add and verify the appropriate Google Search Console property and submit the live sitemap.",
-    "After the release is verified, inspect the existing Google Analytics account and create the least disruptive GA4 property or stream without deploying a tag.",
     "Do not deploy GA4 until consent wording and the Reject, Accept and withdrawal paths have been implemented and tested.",
+    "Use Search Console after processing to inspect page indexing; sitemap success alone does not establish indexing or ranking.",
     "Add the preview form only after consent, confirmation email, chapters and download routing pass their separate gate."
   ]
 }
