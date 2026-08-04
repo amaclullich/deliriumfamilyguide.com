@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "name": "Delirium family information visual family",
+  "principle": "Create a quiet family resemblance between Delirium Support and the Delirium Family Guide. Do not create a new umbrella brand or make the free health-information site look commercial.",
+  "colour": {
+    "deep_teal": "#0D3F47",
+    "dark_teal": "#082F36",
+    "mid_teal": "#15535B",
+    "mist_green": "#DCEBEA",
+    "pale_mist": "#EFF7F5",
+    "warm_gold": "#DFAA32",
+    "soft_gold": "#F3D78B",
+    "warm_cream": "#FBFAF6",
+    "body_ink": "#142F33",
+    "muted_ink": "#5C6B6D"
+  },
+  "usage": {
+    "delirium_support": "Keep sans-serif headings and body type. Use deep teal and mist green more consistently, with gold only for selected rules, icons and the quiet book panel. Retain the urgent-action colour as a separate safety signal.",
+    "family_guide": "Use serif display headings, sans-serif body copy, deep teal fields, mist backgrounds and restrained gold actions derived from the cover.",
+    "the4at": "Do not recolour the clinical site. Use the family-information palette only inside the Family Guide panel and links.",
+    "accessibility": "Do not use warm gold for small text on white. Pair gold with deep teal, or use it as a border, icon or large decorative field. Preserve strong focus indicators and urgent-action contrast."
+  },
+  "typography": {
+    "shared_body": "system sans-serif",
+    "delirium_support_headings": "system sans-serif",
+    "family_guide_display": "Georgia or equivalent readable book serif",
+    "rule": "Share proportions, spacing and colour before trying to make the typography identical."
+  },
+  "brand_architecture": {
+    "public_umbrella_name": null,
+    "free_information_destination": "Delirium Support",
+    "book_destination": "Delirium Family Guide",
+    "shared_descriptor": "Clear information about delirium for patients, families and carers"
+  }
+}
