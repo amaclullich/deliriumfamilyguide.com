@@ -8,6 +8,7 @@ Static website for `deliriumfamilyguide.com`.
 - The free-preview section is intentionally inactive until Chapters 1 and 2, the consent wording, the confirmation email and the download route are final.
 - No analytics, cookies or email signup code is active.
 - The source cover files in the Fiverr delivery folder remain untouched. Optimised copies are stored in `assets/` for the site.
+- `CNAME.pending` preserves the intended custom domain. It must be renamed to `CNAME` only when the Porkbun DNS cutover is being made; until then, the GitHub Pages address remains available for review.
 
 ## Publication sequence
 
@@ -16,8 +17,8 @@ Static website for `deliriumfamilyguide.com`.
 3. Preserve a MailerLite export and suppression record.
 4. Prepare explicit signup wording, double opt-in and a group-based automation.
 5. Add the tested form to the preview section and update `privacy.html`.
-6. Create or connect the GitHub repository and enable GitHub Pages.
-7. Verify the custom domain in GitHub, then replace the Porkbun temporary redirect with the exact GitHub Pages DNS records.
+6. Review the site at its temporary GitHub Pages address.
+7. Verify the custom domain in GitHub, rename `CNAME.pending` to `CNAME`, then replace the Porkbun temporary redirect with the exact GitHub Pages DNS records.
 8. Enforce HTTPS and test the apex and `www` addresses on desktop and phone.
 9. Add the live book-site route to the 4AT site and the quiet Delirium Support panel.
 
