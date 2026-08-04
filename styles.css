@@ -515,7 +515,17 @@ h3 {
   font-size: 0.83rem !important;
 }
 
-footer {
+.soft-cta {
+  margin-top: 24px;
+  font-weight: 700;
+}
+
+.soft-cta a {
+  color: var(--teal-800);
+  text-underline-offset: 0.24em;
+}
+
+.site-footer {
   padding-block: 70px 26px;
   color: rgba(255, 255, 255, 0.76);
   background: #06262c;
@@ -524,34 +534,85 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 60px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(190px, 0.7fr);
+  gap: 58px;
+  align-items: start;
 }
 
 .footer-title {
-  margin-bottom: 8px;
+  max-width: 420px;
+  margin-bottom: 14px;
   color: var(--white);
   font-family: var(--serif);
-  font-size: 1.4rem;
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+.footer-kicker,
+.footer-heading {
+  margin-bottom: 15px;
+  color: var(--gold-light);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.footer-summary {
+  max-width: 430px;
+}
+
+.footer-cta {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--white);
+  font-weight: 700;
+  text-underline-offset: 0.24em;
 }
 
 .footer-links {
   display: grid;
-  gap: 8px;
+  gap: 9px;
   align-content: start;
+  margin-top: 18px;
 }
 
 .footer-links a {
   color: rgba(255, 255, 255, 0.84);
+  text-underline-offset: 0.2em;
+}
+
+.footer-medical {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 45px;
+  margin-top: 48px;
+  padding-block: 24px;
+  border-block: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.8rem;
+}
+
+.footer-medical p {
+  margin: 0;
+}
+
+.footer-medical strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-medical a,
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  margin-top: 50px;
-  padding-top: 22px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  margin-top: 22px;
   color: rgba(255, 255, 255, 0.55);
   font-size: 0.78rem;
 }
@@ -611,6 +672,19 @@ footer {
   .topic-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid nav {
+    grid-column: 1 / -1;
+  }
+
+  .footer-medical {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -664,7 +738,8 @@ footer {
 
   .topic-grid,
   .author-grid,
-  .footer-grid {
+  .footer-grid,
+  .footer-medical {
     grid-template-columns: 1fr;
   }
 
@@ -674,6 +749,14 @@ footer {
 
   .author-grid {
     gap: 30px;
+  }
+
+  .footer-grid {
+    gap: 42px;
+  }
+
+  .footer-medical {
+    gap: 18px;
   }
 }
 
