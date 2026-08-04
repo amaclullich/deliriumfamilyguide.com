@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "site": "https://deliriumfamilyguide.com/",
+  "repository": "https://github.com/amaclullich/deliriumfamilyguide.com",
+  "stage": "ready_for_pull_request",
+  "baseline": {
+    "branch": "main",
+    "commit": "e87192edc0ba6b242a29a968669cebc7c5d82a46",
+    "checked_at_utc": "2026-08-04T16:23:18Z"
+  },
+  "release_branch": "agent/seo-ai-discoverability-audit",
+  "constraints_preserved": [
+    "github_pages_root_publication",
+    "custom_apex_domain",
+    "quiet_book_positioning",
+    "no_analytics_or_tracking_tag",
+    "no_cookies",
+    "no_email_form",
+    "existing_visual_design",
+    "existing_rollback_history"
+  ],
+  "official_google_search_sources": [
+    {
+      "topic": "ai_features",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "finding": "No special AI markup or extra technical requirement is needed beyond eligibility for indexed Google Search results with a snippet and normal SEO fundamentals."
+    },
+    {
+      "topic": "people_first_content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "finding": "Clear purpose, useful content, visible expertise and verifiable authorship support people-first quality."
+    },
+    {
+      "topic": "structured_data",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "last_updated_by_google": "2026-07-10",
+      "finding": "Structured data must represent visible page content accurately and does not guarantee a rich result."
+    },
+    {
+      "topic": "canonical_urls",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "last_updated_by_google": "2026-07-10",
+      "finding": "Redirects, self-referential canonicals and canonical sitemap URLs reinforce the preferred URL."
+    },
+    {
+      "topic": "titles",
+      "url": "https://developers.google.com/search/docs/appearance/title-link"
+    },
+    {
+      "topic": "snippets",
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "last_updated_by_google": "2026-04-20"
+    },
+    {
+      "topic": "crawlable_links",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable"
+    },
+    {
+      "topic": "images",
+      "url": "https://developers.google.com/search/docs/appearance/google-images"
+    }
+  ],
+  "baseline_live_audit": {
+    "https_apex": 200,
+    "https_www": {
+      "status": 301,
+      "location": "https://deliriumfamilyguide.com/"
+    },
+    "http_apex": {
+      "status": 301,
+      "location": "https://deliriumfamilyguide.com/"
+    },
+    "http_www": {
+      "status": 301,
+      "location": "https://deliriumfamilyguide.com/"
+    },
+    "unknown_route": 404,
+    "robots_txt": 200,
+    "sitemap_xml": 200,
+    "mobile_320px_horizontal_overflow": false,
+    "analytics_or_tag_manager_markers_in_source": 0,
+    "analytics_identifiers_in_source": 0
+  },
+  "implemented": [
+    "More descriptive home title and unique page descriptions",
+    "Explicit canonical and search-preview controls on indexable pages",
+    "Complete Open Graph and X card metadata with verified image dimensions and alt text",
+    "JSON-LD graph for WebSite, WebPage, Book, accurate author Persons, Delirium Support Press and the cover ImageObject",
+    "Alasdair MacLullich entity links to ORCID, University profile, Research Explorer and personal site",
+    "Sharmella Summan represented only by facts visible on the page",
+    "Canonical-root internal links from policy pages instead of index.html duplicates",
+    "Semantic author headings and corrected intrinsic image dimensions",
+    "Footer policy navigation remains visible on small screens",
+    "Sitemap reduced to canonical URLs and truthful last-modified dates"
+  ],
+  "considered_not_added": {
+    "BreadcrumbList": "No visible breadcrumb trail and the site has only one level of content pages.",
+    "FAQPage": "No visible FAQ page and no valid rich-result rationale.",
+    "llms_txt": "Not a Google requirement and excluded by scope.",
+    "ai_schema": "No legitimate special AI schema exists.",
+    "ratings_reviews_awards_isbn_availability": "No supported visible facts are available.",
+    "analytics": "Deferred to a separate consent-gated release."
+  },
+  "verification": {
+    "local_checks": {
+      "git_diff_check": "pass",
+      "html_validate": "pass",
+      "json_and_json_ld_parse": "pass",
+      "sitemap_xml_parse": "pass",
+      "local_asset_references": "pass",
+      "public_author_identity_links": "4_of_4_resolved_with_200",
+      "public_related_site_links": "3_of_3_resolved_with_200",
+      "mobile_320px_horizontal_overflow": false,
+      "mobile_footer_information_visible": true,
+      "lighthouse_mobile": {
+        "performance": 0.97,
+        "accessibility": 1.0,
+        "best_practices": 1.0,
+        "seo": 1.0,
+        "first_contentful_paint": "0.9 s",
+        "largest_contentful_paint": "2.6 s",
+        "cumulative_layout_shift": 0,
+        "total_blocking_time": "0 ms"
+      }
+    },
+    "pull_request": "pending",
+    "deployment": "pending",
+    "custom_domain_post_deployment": "pending"
+  },
+  "search_state": {
+    "technical_readiness": "release_candidate",
+    "google_search_console": "not_yet_configured",
+    "indexing": "not_asserted",
+    "ranking": "not_asserted",
+    "ai_answer_inclusion": "not_asserted"
+  },
+  "later_actions": [
+    "After the release is verified, add and verify the appropriate Google Search Console property and submit the live sitemap.",
+    "After the release is verified, inspect the existing Google Analytics account and create the least disruptive GA4 property or stream without deploying a tag.",
+    "Do not deploy GA4 until consent wording and the Reject, Accept and withdrawal paths have been implemented and tested.",
+    "Add the preview form only after consent, confirmation email, chapters and download routing pass their separate gate."
+  ]
+}

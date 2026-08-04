@@ -10,6 +10,8 @@ Static website for `deliriumfamilyguide.com`.
 - The source cover files in the Fiverr delivery folder remain untouched. Optimised copies are stored in `assets/` for the site.
 - `CNAME` activates the custom domain. `CNAME.pending` is retained as a record of the held-back cutover state.
 - The footer provides visible authorship, verified professional profiles, medical-information wording and a link to the editorial policy.
+- Search metadata and JSON-LD describe only visible content and verified author relationships. They do not establish indexing, ranking or inclusion in AI-generated answers.
+- The machine-readable release record is stored at `.github/handover/seo-ai-discoverability.json` so it is retained with the repository rather than presented as public site content.
 
 ## Publication sequence
 
