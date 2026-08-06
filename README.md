@@ -6,13 +6,13 @@ Static website for `deliriumfamilyguide.com`.
 
 - The informational site is live at `https://deliriumfamilyguide.com/` with HTTPS enforced.
 - The free-preview section is intentionally inactive until Chapters 1 and 2, the consent wording, the confirmation email and the download route are final.
-- No analytics, cookies or email signup code is active.
+- Google Analytics is available only after a visitor explicitly accepts the analytics notice. The site does not load Google Analytics before that choice.
 - The source cover files in the Fiverr delivery folder remain untouched. Optimised copies are stored in `assets/` for the site.
 - `CNAME` activates the custom domain. `CNAME.pending` is retained as a record of the held-back cutover state.
 - The footer provides visible authorship, verified professional profiles, medical-information wording and a link to the editorial policy.
 - Search metadata and JSON-LD describe only visible content and verified author relationships. They do not establish indexing, ranking or inclusion in AI-generated answers.
 - Machine-readable release records are stored in `.github/handover/` so they are retained with the repository rather than presented as public site content.
-- Search Console is verified and the sitemap has been accepted. The separate GA4 property and web stream exist, but the Analytics tag is deliberately not deployed until consent and privacy behaviour have been implemented and tested.
+- Search Console is verified and the sitemap has been accepted. The GA4 tag is consent-based, and privacy behaviour is described in `privacy.html`.
 
 ## Publication sequence
 
