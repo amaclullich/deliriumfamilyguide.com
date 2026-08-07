@@ -119,19 +119,19 @@ img {
   text-transform: uppercase;
 }
 
-nav {
+.site-header nav {
   display: flex;
   align-items: center;
   gap: 25px;
   font-size: 0.88rem;
 }
 
-nav a {
+.site-header nav a {
   color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
 }
 
-nav a:hover {
+.site-header nav a:hover {
   color: var(--white);
 }
 
@@ -625,6 +625,10 @@ h3 {
   padding-block: 78px;
   color: var(--white);
   background: var(--teal-900);
+}
+
+.privacy-hero .eyebrow {
+  color: var(--gold-light);
 }
 
 .privacy-hero h1 {
