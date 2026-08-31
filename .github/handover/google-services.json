@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at_utc": "2026-08-31T13:59:36Z",
+  "recorded_at_utc": "2026-08-31T20:05:09Z",
   "site": "https://deliriumfamilyguide.com/",
   "google_search_console": {
     "property": "https://deliriumfamilyguide.com/",
@@ -19,14 +19,23 @@
       "discovered_pages": 3,
       "discovered_videos": 0
     },
-    "processing_state": "requires_signed_in_refresh",
-    "last_signed_in_check_date": "2026-08-04",
+    "processing_state": "page_indexing_report_available",
+    "last_signed_in_check_date": "2026-08-31",
+    "page_indexing_report": {
+      "report_last_update_date": "2026-08-21",
+      "scope": "all_known_pages",
+      "indexed_pages": 3,
+      "not_indexed_pages": 0,
+      "not_indexed_reasons": 0,
+      "evidence": "signed_in_search_console_screenshot_provided_2026-08-31"
+    },
     "public_search_check": {
       "date": "2026-08-31",
       "result": "no_results_returned",
       "interpretation": "does_not_establish_indexing_state"
     },
-    "indexing_state": "not_established_without_current_search_console_check",
+    "indexing_state": "confirmed_3_of_3_known_pages_indexed",
+    "performance_state": "not_observed_in_supplied_page_indexing_report",
     "ranking_state": "not_established"
   },
   "google_analytics": {
@@ -93,7 +102,7 @@
     "technical_readiness": "live_verified",
     "search_console_verification": "complete",
     "sitemap_processing": "success",
-    "page_indexing": "requires_current_signed_in_search_console_check",
+    "page_indexing": "confirmed_3_of_3_known_pages_indexed_report_updated_2026_08_21",
     "search_ranking": "not_established",
     "analytics_account_setup": "complete",
     "analytics_tag_deployment": "consent_gated_live",
