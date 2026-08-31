@@ -6,7 +6,7 @@ Static website for `deliriumfamilyguide.com`.
 
 - The informational site is live at `https://deliriumfamilyguide.com/` with HTTPS enforced.
 - The free-preview section is intentionally inactive until Chapters 1 and 2, the consent wording, the confirmation email and the download route are final.
-- Google Analytics is available only after a visitor explicitly accepts the analytics notice. The site does not load Google Analytics before that choice.
+- Google Analytics is available only after a visitor explicitly accepts the analytics notice. The site does not load Google Analytics before that choice, and the footer settings control allows consent to be changed or withdrawn.
 - The source cover files in the Fiverr delivery folder remain untouched. Optimised copies are stored in `assets/` for the site.
 - `CNAME` activates the custom domain. `CNAME.pending` is retained as a record of the held-back cutover state.
 - The footer provides visible authorship, verified professional profiles, medical-information wording and a link to the editorial policy.
