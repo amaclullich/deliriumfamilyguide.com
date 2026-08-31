@@ -137,14 +137,13 @@
     "technical_readiness": "live_verified",
     "google_search_console": "url_prefix_property_verified",
     "sitemap": "submitted_and_read_successfully_with_3_discovered_pages",
-    "processing": "requires_current_signed_in_search_console_refresh",
+    "processing": "page_indexing_report_available",
     "public_search_check_2026_08_31": "no_results_returned_but_not_proof_of_non_indexing",
-    "indexing": "not_established_without_current_search_console_check",
+    "indexing": "confirmed_3_of_3_known_pages_indexed_report_updated_2026_08_21",
     "ranking": "not_asserted",
     "ai_answer_inclusion": "not_asserted"
   },
   "later_actions": [
-    "Use the signed-in Search Console property to inspect page indexing and performance; sitemap success and public search checks do not establish indexing or ranking.",
     "Add the preview form only after consent, confirmation email, chapters and download routing pass their separate gate."
   ]
 }
