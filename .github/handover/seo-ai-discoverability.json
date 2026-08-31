@@ -144,7 +144,6 @@
     "ai_answer_inclusion": "not_asserted"
   },
   "later_actions": [
-    "Verify the consent-withdrawal fix on the live custom domain after deployment and record the result.",
     "Use the signed-in Search Console property to inspect page indexing and performance; sitemap success and public search checks do not establish indexing or ranking.",
     "Add the preview form only after consent, confirmation email, chapters and download routing pass their separate gate."
   ]

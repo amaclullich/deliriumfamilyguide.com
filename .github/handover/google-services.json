@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "recorded_at_utc": "2026-08-31T13:53:14Z",
+  "recorded_at_utc": "2026-08-31T13:59:36Z",
   "site": "https://deliriumfamilyguide.com/",
   "google_search_console": {
     "property": "https://deliriumfamilyguide.com/",
@@ -74,6 +74,19 @@
       "post_withdrawal_reload": "pass_no_analytics_requests",
       "analytics_cookie_removal": "requires_live_origin_verification_after_deployment",
       "mobile_320px_horizontal_overflow": false
+    },
+    "live_test_2026_08_31_after_withdrawal_fix": {
+      "release": {
+        "pull_request": "https://github.com/amaclullich/deliriumfamilyguide.com/pull/7",
+        "main_commit": "be5384dca6845935108a9608f3763d7ea76ac086"
+      },
+      "default_path": "pass_no_analytics_requests_or_cookies_and_no_forced_focus",
+      "reject_path": "pass_persisted_without_analytics_requests_or_cookies",
+      "accept_path": "pass_ga4_loaded_page_view_sent_and_two_first_party_ga_cookies_set",
+      "settings_reopen_path": "pass_current_state_reported",
+      "withdrawal_path": "pass_ga_disabled_tag_removed_and_both_first_party_ga_cookies_removed",
+      "post_withdrawal_navigation": "pass_no_analytics_requests_or_cookies",
+      "mobile_320px_horizontal_overflow": false
     }
   },
   "state_distinctions": {
@@ -85,6 +98,6 @@
     "analytics_account_setup": "complete",
     "analytics_tag_deployment": "consent_gated_live",
     "analytics_data_collection": "possible_only_after_explicit_acceptance",
-    "consent_withdrawal_fix": "release_candidate"
+    "consent_withdrawal_fix": "live_verified"
   }
 }
