@@ -18,8 +18,8 @@
     "github_pages_root_publication",
     "custom_apex_domain",
     "quiet_book_positioning",
-    "no_analytics_or_tracking_tag",
-    "no_cookies",
+    "no_analytics_before_explicit_consent",
+    "no_analytics_cookies_before_explicit_consent",
     "no_email_form",
     "existing_visual_design",
     "existing_rollback_history"
@@ -104,7 +104,7 @@
     "llms_txt": "Not a Google requirement and excluded by scope.",
     "ai_schema": "No legitimate special AI schema exists.",
     "ratings_reviews_awards_isbn_availability": "No supported visible facts are available.",
-    "analytics": "Deferred to a separate consent-gated release."
+    "analytics": "Added in a separate consent-gated release on 6 August 2026."
   },
   "verification": {
     "local_checks": {
@@ -137,14 +137,15 @@
     "technical_readiness": "live_verified",
     "google_search_console": "url_prefix_property_verified",
     "sitemap": "submitted_and_read_successfully_with_3_discovered_pages",
-    "processing": "search_console_reports_processing_data",
-    "indexing": "not_established",
+    "processing": "requires_current_signed_in_search_console_refresh",
+    "public_search_check_2026_08_31": "no_results_returned_but_not_proof_of_non_indexing",
+    "indexing": "not_established_without_current_search_console_check",
     "ranking": "not_asserted",
     "ai_answer_inclusion": "not_asserted"
   },
   "later_actions": [
-    "Do not deploy GA4 until consent wording and the Reject, Accept and withdrawal paths have been implemented and tested.",
-    "Use Search Console after processing to inspect page indexing; sitemap success alone does not establish indexing or ranking.",
+    "Verify the consent-withdrawal fix on the live custom domain after deployment and record the result.",
+    "Use the signed-in Search Console property to inspect page indexing and performance; sitemap success and public search checks do not establish indexing or ranking.",
     "Add the preview form only after consent, confirmation email, chapters and download routing pass their separate gate."
   ]
 }
