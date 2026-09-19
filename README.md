@@ -14,17 +14,20 @@ Static website for `deliriumfamilyguide.com`.
 - Machine-readable release records are stored in `.github/handover/` so they are retained with the repository rather than presented as public site content.
 - Search Console is verified and the sitemap has been accepted. The GA4 tag is consent-based, and privacy behaviour is described in `privacy.html`.
 
-## Publication sequence
+## Audit and release, 20 September 2026
 
-1. Complete and typeset Chapters 1 and 2.
-2. Add the final two-chapter PDF to a stable controlled location.
-3. Preserve a MailerLite export and suppression record.
-4. Prepare explicit signup wording, double opt-in and a group-based automation.
-5. Add the tested form to the preview section and update `privacy.html`.
-6. Add the live book-site route to the 4AT site and the quiet Delirium Support panel.
+The public Chapter 1 form and its existing MailerLite destination are retained. The 19 September release records single opt-in. This audit does not change that setting or the welcome automation, and does not establish inbox delivery or unsubscribe behaviour.
 
-## Safety gates
+The audit improves mobile navigation, button contrast, keyboard feedback, form failure handling, analytics storage resilience, print legibility and privacy wording. The existing urgent-help link is placed before the book introduction. Homepage and privacy sitemap modification dates reflect this release; medical review dates are preserved.
 
-- Do not publish the MailerLite form until double opt-in, delivery and unsubscribe have been tested.
-- Do not add a campaign to the legacy list without reviewing its original permission scope.
-- Do not delete or overwrite the original PSD, PDF, JPG or mockup assets.
+## Remaining operational verification
+
+- Use an explicitly authorised test mailbox to verify signup, delivery, the current PDF and unsubscribe in MailerLite. Do not infer delivery from a successful form response.
+- Check the October publication date and add verified purchase links when editions are available.
+- Search Console's last recorded indexing check was 31 August 2026. The handover is historical evidence, not a current traffic or ranking report.
+- Before any future mailing to the legacy list, review its original permission scope.
+- Preserve the original PSD, PDF, JPG and mockup assets.
+
+## Checks
+
+Run `node .github/tests/behaviour.cjs` for isolated signup and analytics checks. These use simulated responses and make no external requests. Also check the public pages, keyboard use and mobile layouts after a release.

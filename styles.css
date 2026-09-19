@@ -43,7 +43,8 @@ a:hover {
   color: var(--teal-950);
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 3px solid var(--gold);
   outline-offset: 4px;
   border-radius: 2px;
@@ -135,7 +136,7 @@ img {
   color: var(--white);
 }
 
-.nav-action {
+.site-header nav .nav-action {
   padding: 8px 14px;
   color: var(--teal-950);
   background: var(--gold-light);
@@ -143,7 +144,7 @@ img {
   font-weight: 650;
 }
 
-.nav-action:hover {
+.site-header nav .nav-action:hover {
   color: var(--teal-950);
   background: var(--white);
 }
@@ -654,6 +655,8 @@ h3 {
   bottom: 18px;
   left: 18px;
   max-width: 680px;
+  max-height: calc(100dvh - 36px);
+  overflow-y: auto;
   margin-inline: auto;
   padding: 18px 20px;
   border: 1px solid rgba(255, 255, 255, 0.32);
@@ -685,6 +688,11 @@ h3 {
 
 .analytics-consent .button-secondary {
   background: transparent;
+}
+
+.analytics-consent .button-secondary:hover {
+  color: var(--teal-950);
+  background: var(--white);
 }
 
 .analytics-consent-actions a {
@@ -788,7 +796,7 @@ h3 {
 }
 
 .status-card .signup-form .signup-message:empty {
-  display: none;
+  margin: 0;
 }
 
 .status-card .signup-form .signup-message[data-state="error"] {
@@ -846,11 +854,27 @@ h3 {
 
   .header-inner {
     min-height: 70px;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 8px;
+    padding-block: 16px;
   }
 
   .site-header nav {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    width: 100%;
+  }
+
+  .site-header nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .status-card {
+    padding: 24px;
   }
 
   .hero-grid {
@@ -921,6 +945,9 @@ h3 {
 @media print {
   .site-header,
   .actions,
+  .analytics-consent,
+  .signup-form,
+  .signup-fallback,
   footer {
     display: none;
   }
@@ -930,6 +957,12 @@ h3 {
   .preview-section {
     color: #000;
     background: #fff;
+  }
+
+  .hero p,
+  .preview-section p,
+  .section-label.light {
+    color: #000 !important;
   }
 
   .hero-grid,

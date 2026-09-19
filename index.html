@@ -135,7 +135,13 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
+    <aside class="medical-note" aria-label="Urgent medical advice">
+      <div class="shell">
+        <strong>Sudden confusion needs prompt medical assessment.</strong>
+        <span>This website does not replace advice from a healthcare professional. <a href="https://deliriumsupport.com/get-help-now/">Free information about what to do now is available on Delirium Support.</a></span>
+      </div>
+    </aside>
     <section class="hero" id="top">
       <div class="shell hero-grid">
         <div class="hero-copy">
@@ -157,13 +163,6 @@
         </figure>
       </div>
     </section>
-
-    <aside class="medical-note" aria-label="Urgent medical advice">
-      <div class="shell">
-        <strong>Sudden confusion needs prompt medical assessment.</strong>
-        <span>This website does not replace advice from a healthcare professional. <a href="https://deliriumsupport.com/get-help-now/">Free information about what to do now is available on Delirium Support.</a></span>
-      </div>
-    </aside>
 
     <section class="section" id="about">
       <div class="shell narrow">
@@ -235,14 +234,15 @@
           <p>Chapter 1, Understanding delirium, explains what delirium is, how it differs from dementia and other conditions, what causes it and how families can help. The PDF includes the illustrations, the book cover and the contents list for the whole book.</p>
         </div>
         <div class="status-card signup-card">
-          <form class="signup-form" id="chapter-signup" action="https://assets.mailerlite.com/jsonp/1670382/forms/160368539465679921/subscribe" method="post" novalidate>
+          <p class="signup-fallback" id="signup-fallback">If the form is unavailable, <a href="mailto:alasdair@the4at.com?subject=Chapter%201%20request">email us to request Chapter 1</a>.</p>
+          <form hidden class="signup-form" id="chapter-signup" action="https://assets.mailerlite.com/jsonp/1670382/forms/160368539465679921/subscribe" method="post" novalidate>
             <label for="signup-email">Email address</label>
-            <input id="signup-email" name="fields[email]" type="email" autocomplete="email" inputmode="email" required>
+            <input id="signup-email" name="fields[email]" type="email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" aria-describedby="signup-note signup-message" required>
             <input type="hidden" name="ml-submit" value="1">
             <input type="hidden" name="anticsrf" value="true">
             <button class="button button-primary" type="submit">Send me Chapter 1</button>
-            <p class="signup-note">We will email you a link to the PDF, and occasional news about the book, including when it is published. You can unsubscribe at any time. <a href="privacy.html#email-updates">How we use your email address</a></p>
-            <p class="signup-message" role="status" aria-live="polite"></p>
+            <p class="signup-note" id="signup-note">We will email you a link to the PDF, and occasional news about the book, including when it is published. You can unsubscribe at any time. <a href="privacy.html#email-updates">How we use your email address</a></p>
+            <p class="signup-message" id="signup-message" role="status" aria-live="polite" aria-atomic="true"></p>
           </form>
         </div>
       </div>
