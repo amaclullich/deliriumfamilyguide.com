@@ -5,7 +5,7 @@ Static website for `deliriumfamilyguide.com`.
 ## Current state
 
 - The informational site is live at `https://deliriumfamilyguide.com/` with HTTPS enforced.
-- The free-preview section is intentionally inactive until Chapters 1 and 2, the consent wording, the confirmation email and the download route are final.
+- The free-preview section carries a sign-up form for the illustrated Chapter 1 (19 September 2026). It posts to the MailerLite form "Book Landing Page Form" (single opt-in); the welcome automation emails the PDF link. The form uses `signup.js`, loads no third-party script and sets no cookies. `privacy.html#email-updates` describes the email processing.
 - Google Analytics is available only after a visitor explicitly accepts the analytics notice. The site does not load Google Analytics before that choice, and the footer settings control allows consent to be changed or withdrawn.
 - The source cover files in the Fiverr delivery folder remain untouched. Optimised copies are stored in `assets/` for the site.
 - `CNAME` activates the custom domain. `CNAME.pending` is retained as a record of the held-back cutover state.

@@ -726,6 +726,75 @@ h3 {
   outline-offset: 4px;
 }
 
+/* Chapter 1 email sign-up */
+.signup-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--teal-950);
+  font-weight: 700;
+}
+
+.signup-form input[type="email"] {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: 12px 16px;
+  color: var(--ink);
+  font: inherit;
+  background: var(--white);
+  border: 1px solid #9fb4b2;
+  border-radius: 8px;
+}
+
+.signup-form input[type="email"]:focus-visible {
+  border-color: var(--teal-800);
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.signup-form .button {
+  width: 100%;
+  margin-top: 14px;
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
+}
+
+.signup-form .button:focus-visible {
+  outline: 3px solid var(--teal-900);
+  outline-offset: 3px;
+}
+
+.signup-form .button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.status-card .signup-form .signup-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.signup-note a {
+  color: var(--teal-900);
+}
+
+.status-card .signup-form .signup-message {
+  margin: 14px 0 0;
+  color: var(--teal-900);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.status-card .signup-form .signup-message:empty {
+  display: none;
+}
+
+.status-card .signup-form .signup-message[data-state="error"] {
+  color: #9b1c1c;
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .split,
