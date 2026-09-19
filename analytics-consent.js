@@ -60,16 +60,24 @@
     });
   }
 
+  let memoryChoice = null;
+
+  function readChoice() {
+    try { return memoryChoice || window.localStorage.getItem(consentKey); }
+    catch (_) { return memoryChoice; }
+  }
+
   function saveChoice(choice) {
-    window.localStorage.setItem(consentKey, choice);
-    document.querySelector(".analytics-consent")?.remove();
+    memoryChoice = choice;
     if (choice === "accepted") startAnalytics();
     else stopAnalytics();
+    try { window.localStorage.setItem(consentKey, choice); } catch (_) {}
+    document.querySelector(".analytics-consent")?.remove();
   }
 
   function showChoice(fromSettings = false, returnFocus = null) {
     document.querySelector(".analytics-consent")?.remove();
-    const currentChoice = window.localStorage.getItem(consentKey);
+    const currentChoice = readChoice();
     const banner = document.createElement("section");
     banner.className = "analytics-consent";
     banner.setAttribute("role", "region");
@@ -87,7 +95,10 @@
       </div>`;
     banner.addEventListener("click", (event) => {
       const button = event.target.closest("button[data-choice]");
-      if (button) saveChoice(button.dataset.choice);
+      if (button) {
+        saveChoice(button.dataset.choice);
+        returnFocus?.focus();
+      }
       if (event.target.closest("button[data-close]")) {
         banner.remove();
         returnFocus?.focus();
@@ -102,7 +113,16 @@
     if (settingsButton) showChoice(true, settingsButton);
   });
 
-  const choice = window.localStorage.getItem(consentKey);
+  window.addEventListener("storage", (event) => {
+    if (event.key !== consentKey && event.key !== null) return;
+    memoryChoice = null;
+    const nextChoice = readChoice();
+    if (nextChoice === "accepted") startAnalytics();
+    else stopAnalytics();
+    document.querySelector(".analytics-consent")?.remove();
+  });
+
+  const choice = readChoice();
   if (choice === "accepted") startAnalytics();
   else {
     stopAnalytics();
