@@ -78,18 +78,19 @@
   function showChoice(fromSettings = false, returnFocus = null) {
     document.querySelector(".analytics-consent")?.remove();
     const currentChoice = readChoice();
+    const isOff = currentChoice === "declined";
     const banner = document.createElement("section");
     banner.className = "analytics-consent";
     banner.setAttribute("role", "region");
     banner.setAttribute("aria-label", "Analytics preference");
-    const message = fromSettings && currentChoice
-      ? `Google Analytics is currently ${currentChoice === "accepted" ? "on" : "off"}. You can change your choice here.`
-      : "We would like to use optional Google Analytics to understand which pages are helpful. It starts only if you agree.";
+    const message = fromSettings
+      ? `Google Analytics is currently ${isOff ? "off" : "on"}. You can change your choice here.`
+      : "Analytics is on. We use limited Google Analytics to produce aggregate statistics and improve this website. It is not used for advertising or Google Signals. Google receives information such as pages viewed, approximate location, browser or device type and referring website. You can turn analytics off now or at any time.";
     banner.innerHTML = `
       <p>${message}</p>
       <div class="analytics-consent-actions">
-        <button class="button button-primary" type="button" data-choice="accepted">Accept analytics</button>
-        <button class="button button-secondary" type="button" data-choice="declined">No thanks</button>
+        <button class="button button-primary" type="button" data-choice="accepted">${isOff ? "Turn analytics on" : "Keep analytics on"}</button>
+        <button class="button button-secondary" type="button" data-choice="declined">${isOff ? "Keep analytics off" : "Turn analytics off"}</button>
         ${fromSettings ? '<button class="analytics-consent-close" type="button" data-close>Keep current choice</button>' : ""}
         <a href="/privacy.html">Privacy details</a>
       </div>`;
@@ -122,10 +123,13 @@
     document.querySelector(".analytics-consent")?.remove();
   });
 
+  // Limited analytics is on by default under the UK statistical purposes
+  // exception (PECR as amended by the Data (Use and Access) Act 2025).
+  // A saved "declined" choice is honoured; a first visit shows the notice.
   const choice = readChoice();
-  if (choice === "accepted") startAnalytics();
+  if (choice === "declined") stopAnalytics();
   else {
-    stopAnalytics();
-    if (choice !== "declined") showChoice();
+    startAnalytics();
+    if (choice !== "accepted") showChoice();
   }
 })();
