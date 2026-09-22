@@ -6,13 +6,13 @@ Static website for `deliriumfamilyguide.com`.
 
 - The informational site is live at `https://deliriumfamilyguide.com/` with HTTPS enforced.
 - The free-preview section carries a sign-up form for the illustrated Chapter 1 (19 September 2026). It posts to the MailerLite form "Book Landing Page Form" (single opt-in); the welcome automation emails the PDF link. The form uses `signup.js`, loads no third-party script and sets no cookies. `privacy.html#email-updates` describes the email processing.
-- Google Analytics is available only after a visitor explicitly accepts the analytics notice. The site does not load Google Analytics before that choice, and the footer settings control allows consent to be changed or withdrawn.
+- Limited Google Analytics is on by default under the UK statistical purposes exception (PECR as amended by the Data (Use and Access) Act 2025). A notice on the first visit explains it, and the footer settings control lets visitors turn it off at any time; a saved choice to turn it off is honoured and no Analytics script is then loaded.
 - The source cover files in the Fiverr delivery folder remain untouched. Optimised copies are stored in `assets/` for the site.
 - `CNAME` activates the custom domain. `CNAME.pending` is retained as a record of the held-back cutover state.
 - The footer provides visible authorship, verified professional profiles, medical-information wording and a link to the editorial policy.
 - Search metadata and JSON-LD describe only visible content and verified author relationships. They do not establish indexing, ranking or inclusion in AI-generated answers.
 - Machine-readable release records are stored in `.github/handover/` so they are retained with the repository rather than presented as public site content.
-- Search Console is verified and the sitemap has been accepted. The GA4 tag is consent-based, and privacy behaviour is described in `privacy.html`.
+- Search Console is verified and the sitemap has been accepted. The GA4 tag is on by default with a free opt-out, and privacy behaviour is described in `privacy.html`.
 
 ## Audit and release, 20 September 2026
 
