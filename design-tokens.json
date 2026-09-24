@@ -1,35 +1,46 @@
 {
-  "schema_version": "1.0",
-  "name": "Delirium family information visual family",
-  "principle": "Create a quiet family resemblance between Delirium Support and the Delirium Family Guide. Do not create a new umbrella brand or make the free health-information site look commercial.",
+  "schema_version": "2.0",
+  "name": "Delirium Family Guide, taken from the book cover",
+  "updated": "2026-09-25",
+  "principle": "The website is designed to look like the book: the cover's teal field and central light, gold title capitals, then paper pages set like the printed book. Delirium Support shares the teal, gold and serif headings but stays a free information site with no commercial look.",
   "colour": {
-    "deep_teal": "#0D3F47",
-    "dark_teal": "#082F36",
-    "mid_teal": "#15535B",
-    "mist_green": "#DCEBEA",
-    "pale_mist": "#EFF7F5",
-    "warm_gold": "#DFAA32",
-    "soft_gold": "#F3D78B",
-    "warm_cream": "#FBFAF6",
-    "body_ink": "#142F33",
-    "muted_ink": "#5C6B6D"
+    "night": "#0F3A4A",
+    "night_2": "#0B2F3C",
+    "deep": "#164756",
+    "sea": "#205865",
+    "tide": "#2C6570",
+    "mist": "#8BACA3",
+    "mist_text": "#BFD3CD",
+    "mist_pale": "#DFE9E5",
+    "dawn": "#F1E6C6",
+    "dawn_pale": "#F6EFDB",
+    "sun": "#FDF6DC",
+    "gold": "#DCA83C",
+    "gold_light": "#E8C874",
+    "bronze": "#7A5610",
+    "paper": "#FAF6EC",
+    "paper_deep": "#F1EBDD",
+    "page": "#FFFDF7",
+    "ink": "#16262A",
+    "ink_soft": "#4A5B5E",
+    "link": "#185261",
+    "rule": "#D9CFB8"
   },
   "usage": {
-    "delirium_support": "Keep sans-serif headings and body type. Use deep teal and mist green more consistently, with gold only for selected rules, icons and the quiet book panel. Retain the urgent-action colour as a separate safety signal.",
-    "family_guide": "Use serif display headings, sans-serif body copy, deep teal fields, mist backgrounds and restrained gold actions derived from the cover.",
-    "the4at": "Do not recolour the clinical site. Use the family-information palette only inside the Family Guide panel and links.",
-    "accessibility": "Do not use warm gold for small text on white. Pair gold with deep teal, or use it as a border, icon or large decorative field. Preserve strong focus indicators and urgent-action contrast."
+    "gold": "Title capitals, ornaments and buttons on dark teal. Not for small text on paper; use bronze there.",
+    "gold_light": "Small or medium gold text on teal, for contrast.",
+    "paper": "Main reading background. Book excerpts sit on the lighter page colour with the book's drop cap and small capitals.",
+    "contrast": "Body text meets WCAG AA. Gold on night teal 5.6:1; ink on paper 14.5:1; bronze on paper 6.2:1."
   },
   "typography": {
-    "shared_body": "system sans-serif",
-    "delirium_support_headings": "system sans-serif",
-    "family_guide_display": "Georgia or equivalent readable book serif",
-    "rule": "Share proportions, spacing and colour before trying to make the typography identical."
+    "serif": "EB Garamond (self-hosted, variable weight 400 to 800, roman and italic, small caps and old-style figures kept)",
+    "sans": "Source Sans 3 (self-hosted, variable weight)",
+    "rule": "Serif for anything the book would print; sans for navigation, labels, forms and small print."
   },
+  "ornament": "The divider from the cover (line, diamonds, ring and dot, diamonds, line) is an SVG symbol reused between sections.",
   "brand_architecture": {
-    "public_umbrella_name": null,
-    "free_information_destination": "Delirium Support",
-    "book_destination": "Delirium Family Guide",
-    "shared_descriptor": "Clear information about delirium for patients, families and carers"
+    "free_information_destination": "Delirium Support (deliriumsupport.com)",
+    "book_destination": "Delirium Family Guide (deliriumfamilyguide.com)",
+    "newsletter": "Delirium, dementia and better care (alasdairmaclullich.substack.com)"
   }
 }

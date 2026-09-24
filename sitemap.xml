@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://deliriumfamilyguide.com/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-25</lastmod>
+    <image:image><image:loc>https://deliriumfamilyguide.com/assets/delirium-family-guide-cover.jpg</image:loc></image:image>
+    <image:image><image:loc>https://deliriumfamilyguide.com/assets/img/book-hardback-1200.webp</image:loc></image:image>
   </url>
   <url>
-    <loc>https://deliriumfamilyguide.com/privacy.html</loc>
-    <lastmod>2026-09-22</lastmod>
+    <loc>https://deliriumfamilyguide.com/chapter-1/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <image:image><image:loc>https://deliriumfamilyguide.com/assets/img/bed-1200.webp</image:loc></image:image>
+    <image:image><image:loc>https://deliriumfamilyguide.com/assets/img/furrow-1000.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://deliriumfamilyguide.com/voices/</loc>
+    <lastmod>2026-09-25</lastmod>
   </url>
   <url>
     <loc>https://deliriumfamilyguide.com/editorial.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://deliriumfamilyguide.com/privacy.html</loc>
+    <lastmod>2026-09-25</lastmod>
   </url>
 </urlset>
