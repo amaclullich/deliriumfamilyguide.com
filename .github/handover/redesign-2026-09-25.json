@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "release": "Book cover redesign",
+  "date": "2026-09-25",
+  "base_commit": "a870a705c4f7755f173b0388307fc239397b56a0",
+  "pages": {
+    "/": "Cover in live type over the cover's teal and light; back cover text; four family questions with short answers and chapter pointers; the first page of Chapter 1 set as a book page; why the book was written; three verified quotations; Chapter 1 sign-up; full contents; authors; publication details with ISBNs; newsletter with recent Substack posts",
+    "/chapter-1/": "Opening of Chapter 1 word for word from the final Chapter 1 PDF of 19 September 2026, with two of its illustrations, then the sign-up form",
+    "/voices/": "25 quotations from patients and families, each checked character for character against its source; record in voices-sources.json",
+    "/editorial.html": "Adds sources for the figures on the site and the quotation policy",
+    "/privacy.html": "Adds the Substack link behaviour and self-hosted fonts; sign-up and analytics wording unchanged"
+  },
+  "unchanged": ["signup.js", "analytics-consent.js", "MailerLite form action and fields", "Google Analytics measurement ID", "search engine verification tags", "CNAME"],
+  "added": ["assets/fonts (EB Garamond, Source Sans 3; SIL OFL)", "assets/img", "assets/og", "favicon.svg", "favicon.ico", "apple-touch-icon.png", "llms.txt", ".github/workflows/substack-posts.yml", ".github/scripts/update_substack_posts.py"],
+  "checks": {
+    "behaviour_tests": "17 of 17 passed",
+    "html_validate": "0 errors (html-validate 9.7.1, recommended rules)",
+    "axe_core": "0 violations on 6 pages at 1440 px and 390 px (WCAG 2.2 AA and best practice tags)",
+    "lighthouse_mobile_with_compression": {"home_with_analytics": 93, "home_without_analytics": 99, "chapter_1_without_analytics": 100, "accessibility": 100, "best_practices": 100, "seo": 100},
+    "links": "All internal links and fragments resolve; external links return 200 except publisher bot blocks on DOI targets, which open in a browser",
+    "horizontal_overflow_390px": "none"
+  },
+  "figures_sources": {
+    "one_in_four": "Gibb K et al. Age and Ageing 2020, doi:10.1093/ageing/afaa040 (23% of adult medical inpatients, 33 studies)",
+    "persistence": "Cole MG et al. Age and Ageing 2009, doi:10.1093/ageing/afn253; Whitby J et al. Delirium 2022, doi:10.56392/001c.36822"
+  }
+}
