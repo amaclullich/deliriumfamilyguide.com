@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-25",
+  "purpose": "Authorship and trust signals for a health (YMYL) website",
+  "on_site": {
+    "author_entity": "All pages use the Person @id https://www.alasdairmaclullich.com/#person, the same entity described on alasdairmaclullich.com, with its sameAs list (ORCID, University of Edinburgh profile, Research Explorer, Google Scholar, Scopus, OpenAlex, ISNI, Library of Congress, Wikidata Q48288045, Wikipedia, LinkedIn, X, Bluesky, Substack) and worksFor the University of Edinburgh (Wikidata Q160302)",
+    "visible_author_links": "Home page authors section and the footer of every page link to alasdairmaclullich.com, the University of Edinburgh profile, ORCID, Google Scholar and Wikipedia; the editorial policy also links the Research Explorer",
+    "credentials_shown": "Professor of Geriatric Medicine, University of Edinburgh; consultant physician, Royal Infirmary of Edinburgh; creator of the 4AT; co-chair of SIGN 157 (2019); co-founder of the European Delirium Association; Editor-in-Chief of Delirium",
+    "editorial_responsibility": "Named on the home page answers, the quotations page and in structured data (accountablePerson, editor). Not marked as reviewedBy, because the author has not yet read and approved the four answers",
+    "dates": "Page reviewed and published dates shown on the home page, Chapter 1 and quotations pages, with matching dateModified and datePublished",
+    "sources": "Figures on the home page are sourced on editorial.html#sources"
+  },
+  "for_the_author": [
+    "Read the four answers on the home page; once approved, add a visible 'Reviewed by Professor Alasdair MacLullich on [date]' line and reviewedBy/lastReviewed in the home page JSON-LD",
+    "Add a public professional profile link for Dr Sharmella Summan, with her agreement",
+    "Add the book to the Works section of the ORCID record and to Research Explorer (Pure) when published",
+    "Create or complete the Amazon Author Central page and link it from alasdairmaclullich.com",
+    "After publication, create a Wikidata item for the book (ISBNs, authors linked to Q48288045) and suggest the book as an addition to the Google Knowledge Panel"
+  ]
+}
