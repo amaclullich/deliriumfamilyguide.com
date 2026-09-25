@@ -844,6 +844,17 @@ cite {
   line-height: 1.55;
 }
 
+.review-note {
+  max-width: 44em;
+  margin: clamp(36px, 4vw, 48px) 0 0;
+  padding-top: 18px;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
 .question-list .q-ref {
   margin: 0;
   color: var(--bronze);
@@ -1608,6 +1619,16 @@ cite {
   text-transform: none;
 }
 
+.footer-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
 .footer-heading {
   margin-bottom: 12px;
   color: var(--gold-light);
@@ -1779,6 +1800,17 @@ cite {
   color: var(--mist-pale);
   font-size: clamp(1.25rem, 2vw, 1.45rem);
   font-style: italic;
+}
+
+.page-hero .byline {
+  margin: 18px auto 0;
+  color: var(--mist-text);
+  font-family: var(--sans);
+  font-size: 0.98rem;
+}
+
+.page-hero .byline a {
+  color: #fff;
 }
 
 .breadcrumb {
