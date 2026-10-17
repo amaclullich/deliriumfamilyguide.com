@@ -31,7 +31,7 @@ Redesigned 25 September 2026. The home page opens with the book cover set in liv
 ## When the book is published
 
 1. Add the Amazon link to the hero (`cover-actions`), the publication details table and the details line on `voices/index.html`.
-2. Change "Planned for the end of October 2026" to the publication date, and add `datePublished` to the Kindle edition in the home page JSON-LD.
+2. Change "Planned for November 2026" to the publication date, and add `datePublished` to the Kindle edition in the home page JSON-LD.
 3. Update `llms.txt` and the `lastmod` dates in `sitemap.xml`.
 
 ## Checks
